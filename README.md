@@ -1,4 +1,4 @@
-# 🛍️ SUMATIVAIICRUD_LUISQUILELLI
+# SUMATIVAIICRUD_LUISQUILELLI
 
 > **Proyecto Sumativa II - CRUD Monolítico con Django**  
 > Desarrollado por **Luis Quilelli**  
@@ -12,19 +12,8 @@ El sistema utiliza **vistas basadas en clases (CBV)** y el **lenguaje de plantil
 
 ---
 
-##  **Tecnologías utilizadas**
 
-| Tecnología | Descripción |
-|-------------|--------------|
-|  **Python ** | Lenguaje principal |
-|  **Django 5.2.7** | Framework web backend |
-|  **SQLite3** | Base de datos por defecto |
-|  **Bootstrap 5** | Estilos y diseño responsive |
-|🧠 **Vistas basadas en clases (CBV)** | ListView, DetailView, CreateView, UpdateView, DeleteView |
-
----
-
-## 🧩 **Estructura del proyecto**
+##  **Estructura del proyecto**
 SUMATIVAIICRUD_LUISQUILELLI/
 │
 ├── mi_tienda/ # Configuración global del proyecto Django
@@ -70,7 +59,7 @@ class Producto(models.Model):
 
     def __str__(self):
         return self.nombre
-🌐 Rutas principales
+ Rutas principales
 Archivo: productos/urls.py
 
 URL	Vista	Descripción
@@ -80,25 +69,25 @@ URL	Vista	Descripción
 /productos/<int:pk>/editar/	ProductoUpdateView	Edita un producto existente
 /productos/<int:pk>/eliminar/	ProductoDeleteView	Confirma y elimina un producto
 
-🎨 Diseño visual (Bootstrap 5)
+ Diseño visual (Bootstrap 5)
 El sistema utiliza una plantilla base (base.html) con un diseño moderno y profesional, incluyendo una imagen de fondo tipo tienda, navbar oscura y estructura responsive.
 
 
-💻 Ejecución del proyecto
-🔹 1. Crear y activar entorno virtual
+ Ejecución del proyecto
+ 1. Crear y activar entorno virtual
 
 python -m venv venv
 venv\Scripts\activate  # En Windows
 # o
 source venv/bin/activate  # En macOS / Linux
-🔹 2. Instalar dependencias
+ 2. Instalar dependencias
 
 pip install -r requirements.txt
-🔹 3. Ejecutar migraciones
+ 3. Ejecutar migraciones
 
 python manage.py makemigrations
 python manage.py migrate
-🔹 4. Iniciar el servidor
+ 4. Iniciar el servidor
 
 python manage.py runserver
 Luego abre en tu navegador:
